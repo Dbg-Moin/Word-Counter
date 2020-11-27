@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h1>Here the counted result of your inputted txt</h1>
+
+	<h2>My inputted text</h2>
+	<p>{{ fulltext }}</p>
+<h3>output : </h3> <br>
+
+	{% for word, count in sorted %}
+
+	{{word}} - {{count}}
+	<br>
+	{% endfor %}
+</body>
+</html>
